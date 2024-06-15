@@ -71,7 +71,7 @@ namespace WebApplication1.Controllers
 
         [HttpDelete]
         [Route("DeleteNotes")]
-        public JsonResult DeleteNotes([FromForm] int id)
+        public JsonResult DeleteNotes(int id)
         {
             string query = "delete from dbo.Notes where id=@id";
             DataTable table = new DataTable();
